@@ -1,4 +1,4 @@
-01_Project
+01_Practice
 
 This is my practice project #1 - Portfolio how to adopt Wafel the cat, it contains flex box.
 
