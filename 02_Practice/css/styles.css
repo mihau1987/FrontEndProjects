@@ -1,24 +1,29 @@
 body {
   font-family: 'Oswald', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: ;
 }
 
 .container {
   display: flex;
+  max-width: 98%;
+  height: 100vh;
+
 }
 
 .sidebar {
   flex: 1;
   background: -webkit-linear-gradient(180deg, rgb(248, 107, 23), rgb(125, 228, 255));
   background: linear-gradient(180deg, rgb(248, 107, 23), rgb(125, 228, 255));
-  height: 100vh;
+  justify-content: center;
 }
 
 nav ul {
   font-size: 1.8em;
   list-style: none;
   text-align: center;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 nav ul li {
@@ -37,7 +42,11 @@ nav ul li a:hover {
 
 .main {
   flex: 4;
-  margin-left: 2em;
+  position: relative;
+}
+
+.info-content {
+  padding-left: 1em;
 }
 
 .wafel {
@@ -60,9 +69,37 @@ p {
   text-decoration: none;
   padding: 0.3em 1.9em;
   border-radius: 40px;
+  margin-left: 2em;
+  position: absolute;
+  bottom: 15em;
 }
 
 .action-btn:hover {
   background-color: #7de4ff;
   transition: 0.5s;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 102%;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  padding: 1em 0;
+}
+
+ .icons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  list-style: none;
+  opacity: 0.5;
+}
+
+.icons li a {
+  opacity: 0.5;
+}
+
+.icons li a:hover {
+  opacity: 1.0;
 }
