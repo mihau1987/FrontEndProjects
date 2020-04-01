@@ -95,6 +95,10 @@ p {
   text-decoration: none;
 }
 
+.action-btn:hover {
+  background-color: #7de4ff;
+}
+
 footer {
   position: absolute;
   bottom: 0;
