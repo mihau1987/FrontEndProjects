@@ -75,9 +75,9 @@ p {
 }
 
 .dog {
-  width: 30%;
   float: right;
   margin-top: 1em;
+  margin-left: 2.0em;
 }
 
 .info-content {
@@ -97,6 +97,7 @@ p {
 
 .action-btn:hover {
   background-color: #7de4ff;
+  transition: 0.5s;
 }
 
 footer {
