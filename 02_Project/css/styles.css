@@ -140,7 +140,7 @@ footer nav ul li {
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 350px) {
   .container {
     background-color: green;
   }
