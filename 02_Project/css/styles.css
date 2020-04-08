@@ -117,7 +117,10 @@ footer nav ul li {
   line-height: 1.5;
 }
 
-@media screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
+  .container {
+    background-color: green;
+}
   .col2 img {
     width: 100%;
 }
@@ -140,10 +143,10 @@ footer nav ul li {
 
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 550px) {
   .container {
-    background-color: green;
-  }
+  background-color: yellow;  
+}
   .col2 img {
     width: 50%;
 }
