@@ -62,9 +62,9 @@ section {
 }
 
 .aboutus {
-  border: 2px solid black;
   background: black;
   color: #fff;
+  padding: 0.5em;
 }
 
 h2 {
@@ -76,9 +76,9 @@ h2 {
 }
 
 .white {
-  border: 2px solid black;
+  background: grey;
   margin-top: 3em;
-  height: 200px;
+  padding: 0.5em;
 }
 
 .white p {
@@ -87,7 +87,7 @@ h2 {
 
 footer {
   height: 150px;
-  background: grey;
+  background-color: grey;
   margin-top: 3em;
   position: relative;
 }
@@ -101,6 +101,11 @@ footer {
   left: 100em;
 }
 
+footer img {
+  display: flex;
+  justify-content: space-between;
+}
+
 footer nav ul {
   list-style: none;
   padding-top: 0.5em;
@@ -110,4 +115,53 @@ footer nav ul {
 footer nav ul li {
   font-size: 1.5em;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 750px) {
+  .col2 img {
+    width: 100%;
+}
+  .baner {
+    width: 100%;
+  }
+ .aboutus {
+   width: 100%;
+ }
+ .white {
+   width: 100%;
+   background-color: white;
+ }
+ .logo {
+   width: 100%;
+ }
+ header nav {
+   width: 100%;
+ }
+
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    background-color: green;
+  }
+  .col2 img {
+    width: 100%;
+}
+  .baner {
+    width: 100%;
+  }
+ .aboutus {
+   width: 100%;
+ }
+ .white {
+   width: 100%;
+   background-color: white;
+ }
+ .logo {
+   width: 100%;
+ }
+ header nav {
+   width: 50%;
+ }
+
 }
