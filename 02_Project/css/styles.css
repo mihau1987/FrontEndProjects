@@ -117,7 +117,7 @@ footer nav ul li {
   line-height: 1.5;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 710px) {
   .container {
     background-color: green;
 }
@@ -145,7 +145,7 @@ footer nav ul li {
 
 @media screen and (max-width: 550px) {
   .container {
-  background-color: yellow;  
+  background-color: yellow;
 }
   .col2 img {
     width: 50%;
