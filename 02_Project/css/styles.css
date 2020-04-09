@@ -43,21 +43,18 @@ header nav ul li {
 
 .flex-grid-thirds {
   display: flex;
-  max-width: 1550px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .flex-grid-thirds .col2 {
-  flex: 1;
-  justify-content: space-between;
-  margin: 3.8em;
   background-color: black;
-  padding-bottom: 2em;
+  text-align: center;
+  width: 30%;
 }
 
 section {
   text-align: center;
-  margin: 0 auto;
+  margin: 2em auto;
   width: 80%;
 }
 
@@ -89,21 +86,24 @@ footer {
   height: 150px;
   background-color: grey;
   margin-top: 3em;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3em;
+}
+
+.soci {
+  width: 300px;
 }
 
 .icons {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
-  position: absolute;
-  bottom: 1.0em;
-  left: 100em;
 }
 
 footer img {
-  display: flex;
-  justify-content: space-between;
+  width: 25%;
 }
 
 footer nav ul {
@@ -143,12 +143,12 @@ footer nav ul li {
 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .container {
   background-color: yellow;
 }
   .col2 img {
-    width: 50%;
+    width: 100%;
 }
   .baner {
     width: 100%;
@@ -164,7 +164,7 @@ footer nav ul li {
    width: 100%;
  }
  header nav {
-   width: 50%;
+   width: 75%;
  }
 
 }
