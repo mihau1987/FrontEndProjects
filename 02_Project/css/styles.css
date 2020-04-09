@@ -52,6 +52,10 @@ header nav ul li {
   width: 30%;
 }
 
+.col img {
+  max-width: 100%;
+}
+
 section {
   text-align: center;
   margin: 2em auto;
