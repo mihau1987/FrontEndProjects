@@ -32,8 +32,9 @@
   margin: 8px;
   border: 1px solid black;
 }
+
 #wrapper2 {
-max-width: 600px;
+  max-width: 600px;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -49,4 +50,42 @@ max-width: 600px;
 .fi, .si, .te, .elev {
   margin: 8px;
   border: 1px solid black;
+}
+
+@media (max-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+        #wrapper
+        #wrapper2;
+    grid-template-columns: 1fr;
+  }
+
+  #wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 2em;
+  }
+  #wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 2em
+  }
+  .one, .two, .three, .four, .five, .six, .eleven, .ten, .fifteen {
+    background: black;
+  }
+  .seven, .eight, .nine, .twelve, .thirteen, .fourteen {
+    border: 1px solid black;
+    background: white;
+  }
+  .fi, .te, .fift, .on, .si, .elev, .thr, .eig, .thirt, .twel, .fo {
+    background: black;
+  }
+  .tw, .sev, .nin, .fourt {
+    border: 1px solid black;
+    background: white;
+  }
+
 }
