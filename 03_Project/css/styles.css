@@ -52,7 +52,7 @@
   border: 1px solid black;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 640px) {
   .container {
     display: grid;
     grid-template-areas:
