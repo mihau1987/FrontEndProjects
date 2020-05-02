@@ -52,7 +52,7 @@
   border: 1px solid black;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 600px) {
   .container {
     display: grid;
     grid-template-areas:
@@ -62,12 +62,14 @@
   }
 
   #wrapper {
+    height: 33.3vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     margin-right: 2em;
   }
   #wrapper2 {
+    height: 33.3vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
