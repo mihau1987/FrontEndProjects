@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    #wrapper #wrapper2;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#wrapper {
+  max-width: 600px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin-right: 2em;
+}
+
+#wrapper div {
+  padding: 1em;
+}
+
+.one, .two, .three, .four, .seven, .ten, .thirteen, .fourteen, .fifteen {
+  background-color: black;
+  margin: 8px;
+}
+
+.five, .six, .eight, .nine, .eleven, .twelve {
+  margin: 8px;
+  border: 1px solid black;
+}
+#wrapper2 {
+max-width: 600px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin-right: 2em
+}
+
+.on, .tw, .thr, .fo, .sev, .eig, .nin, .twel, .thirt, .fourt, .fift {
+  background: black;
+  margin: 8px;
+}
+
+.fi, .si, .te, .elev {
+  margin: 8px;
+  border: 1px solid black;
+}
