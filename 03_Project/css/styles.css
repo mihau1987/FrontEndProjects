@@ -6,11 +6,11 @@
 .container {
   display: grid;
   grid-template-areas:
-    #wrapper #wrapper2;
+    .wrapper;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-#wrapper {
+.wrapper {
   max-width: 600px;
   height: 100vh;
   display: grid;
@@ -19,77 +19,37 @@
   margin-right: 2em;
 }
 
-#wrapper div {
+.wrapper div {
   padding: 1em;
 }
 
-.one, .two, .three, .four, .seven, .ten, .thirteen, .fourteen, .fifteen {
+.item {
+  margin: 8px;
+  border: 1px solid black;
+}
+
+.black-item {
   background-color: black;
-  margin: 8px;
-}
-
-.five, .six, .eight, .nine, .eleven, .twelve {
-  margin: 8px;
-  border: 1px solid black;
-}
-
-#wrapper2 {
-  max-width: 600px;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  margin-right: 2em
-}
-
-.on, .tw, .thr, .fo, .sev, .eig, .nin, .twel, .thirt, .fourt, .fift {
-  background: black;
-  margin: 8px;
-}
-
-.fi, .si, .te, .elev {
-  margin: 8px;
-  border: 1px solid black;
 }
 
 @media (max-width: 800px) {
-  .container {
+   .container {
     display: grid;
     grid-template-areas:
-        #wrapper
-        #wrapper2;
+        wrapper
+        wrapper;
     grid-template-columns: 1fr;
   }
 
-  #wrapper {
-    min-width: 800px;
-    height: 33.3vh;
+  .wrapper {
+    width: 100%;
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     margin-bottom: 2em;
   }
-  #wrapper2 {
-    max-width: 800px;
-    height: 33.3vh;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-bottom: 2em
-  }
-  .one, .two, .three, .four, .five, .six, .eleven, .ten, .fifteen {
-    background: black;
-  }
-  .seven, .eight, .nine, .twelve, .thirteen, .fourteen {
-    border: 1px solid black;
-    background: white;
-  }
-  .fi, .te, .fift, .on, .si, .elev, .thr, .eig, .thirt, .twel, .fo {
-    background: black;
-  }
-  .tw, .sev, .nin, .fourt {
-    border: 1px solid black;
-    background: white;
-  }
+
+
 
 }
